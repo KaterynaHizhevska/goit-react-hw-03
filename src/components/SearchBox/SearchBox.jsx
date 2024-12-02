@@ -1,11 +1,16 @@
+import s from './SearchBox.module.css'
+
 function SearchBox({ setSearchUser }) { 
   const handleSearchUser = event => {
     setSearchUser(event.target.value.toLowerCase());
   };
 
   return (
-    <form>
-      <label>Знайти контакт за іменем</label>
+    <form className={s.container}>
+          <label>
+              <span className={s.span}>Знайти контакт за іменем
+                  </span>
+              </label>
       <input
         type="text"
         onChange={handleSearchUser}

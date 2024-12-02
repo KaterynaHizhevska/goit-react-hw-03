@@ -32,15 +32,15 @@ function App() {
   };
 
   return (
-    <>
-      <h1>Телефонна книга</h1>
+    <div className='container'>
+      <h1 className='title'>Телефонна книга</h1>
       <AddForm addContact={addContact} />
       <SearchBox searchUser={searchUser} setSearchUser={setSearchUser} />
       <ContactList
         userContacts={filteredContacts}
         handleDeleteContactUser={handleDeleteContactUser}
       />
-    </>
+    </div>
   )
 }
 

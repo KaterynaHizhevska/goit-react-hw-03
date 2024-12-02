@@ -1,5 +1,6 @@
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import s from './ContactForm.module.css'
 
 function ContactForm({ addContact }) {
   const orderSchema = Yup.object({
@@ -27,18 +28,18 @@ function ContactForm({ addContact }) {
   return (
     <div>
       <Formik initialValues={initialValues} onSubmit={handleForm} validationSchema={orderSchema}>
-        <Form>
-            <label>
-                Ім'я
-            <Field name="name" placeholder="name" />
+        <Form className={s.form}>
+            <label className={s.label}>
+                <span>Ім'я</span>
+            <Field className={s.input} name="name" placeholder="name" />
             <ErrorMessage name="name" component="p" />
           </label>
-          <label>
-            Номер телефону
-            <Field name="number" placeholder="number" />
+          <label className={s.label}>
+            <span>Номер телефону</span>
+            <Field className={s.input} name="number" placeholder="number" />
             <ErrorMessage name="number" component="p" />
           </label>
-          <button type="submit">Відправити</button>
+          <button className={s.button} type="submit">Відправити</button>
         </Form>
       </Formik>
     </div>
