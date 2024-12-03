@@ -1,24 +1,22 @@
-.container {
-    width: 100%;
-        max-width: 500px;
-        margin-bottom: 24px;
-}
-
-.container input {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-        border: none;
-}
-
-.container input:focus {
-    border-color: #ffffff;
-    outline: none;
-}
-
-
 .span {
-margin-bottom: 24px;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.input {
+    width: 335px;
+    padding: 8px;
+    border: 1px solid #afabab;
+    border-radius: 4px;
+        font-family: "Montserrat", sans-serif;
+}
+
+.input:focus {
+    outline: 1px solid #2805f0;
+}
+
+.container {
+    margin-bottom: 24px;
+
 }

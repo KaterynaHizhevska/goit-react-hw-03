@@ -11,7 +11,7 @@ function SearchBox({ setSearchUser }) {
               <span className={s.span}>Знайти контакт за іменем
                   </span>
               </label>
-      <input
+      <input className={s.input}
         type="text"
         onChange={handleSearchUser}
         placeholder="Введіть ім'я"

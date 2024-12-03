@@ -30,14 +30,14 @@ function ContactForm({ addContact }) {
       <Formik initialValues={initialValues} onSubmit={handleForm} validationSchema={orderSchema}>
         <Form className={s.form}>
             <label className={s.label}>
-                <span>Ім'я</span>
+                Ім'я
             <Field className={s.input} name="name" placeholder="name" />
-            <ErrorMessage name="name" component="p" />
+            <ErrorMessage className={s.error} name="name" component="p" />
           </label>
           <label className={s.label}>
-            <span>Номер телефону</span>
+            Номер телефону
             <Field className={s.input} name="number" placeholder="number" />
-            <ErrorMessage name="number" component="p" />
+            <ErrorMessage className={s.error} name="number" component="p" />
           </label>
           <button className={s.button} type="submit">Відправити</button>
         </Form>

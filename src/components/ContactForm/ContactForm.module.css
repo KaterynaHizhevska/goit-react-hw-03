@@ -14,10 +14,11 @@ background-color: #fff;
 .label {
     display: flex;
     flex-direction: column;
-    & span {
-        margin-bottom: 12px;
-        font-weight:bold;
-    }
+    font-weight: bold;
+}
+
+.error {
+    color: red;
 }
 
 .input {

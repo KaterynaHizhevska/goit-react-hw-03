@@ -1,4 +1,5 @@
 import Contact from '../Contact/Contact'
+import s from './ContactList.module.css'
 
 function ContactList({ userContacts, handleDeleteContactUser }) {
     const createContact = userContacts.map(user => (
@@ -8,7 +9,7 @@ function ContactList({ userContacts, handleDeleteContactUser }) {
   ));
   return (
      <div>
-      <ul>{createContact}</ul>
+      <ul className={s.list}>{createContact}</ul>
     </div>
   )
 }
