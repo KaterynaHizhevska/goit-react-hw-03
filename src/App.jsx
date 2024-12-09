@@ -23,7 +23,7 @@ function App() {
   };
 
    useEffect(() => {
-    window.localStorage.setItem('contactUser', JSON.stringify(userContacts));
+    window.localStorage.setItem('userContacts', JSON.stringify(userContacts));
    }, [userContacts]);
   
 
